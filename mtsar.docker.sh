@@ -49,7 +49,7 @@ logging:
       timeZone: UTC
 YAML
 
-chown -R $MTSAR_ROOT/log
+chown -R nobody $MTSAR_ROOT/log
 echo "MTSAR_ROOT=$MTSAR_ROOT"
 echo "arg1=$1"
 ls -lsa $MTSAR_ROOT
