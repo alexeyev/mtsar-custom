@@ -49,6 +49,12 @@ logging:
       timeZone: UTC
 YAML
 
+echo "MTSAR_ROOT=$MTSAR_ROOT"
+echo "arg1=$1"
+ls -lsa $MTSAR_ROOT
+echo $(pwd)
+
+
 if [ -z "$1" ]; then
     exec java -jar mtsar.jar server mtsar.docker.yml 2>>$MTSAR_ROOT/log/stderr.log >>$MTSAR_ROOT/log/stdout.log
 else
