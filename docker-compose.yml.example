@@ -21,8 +21,8 @@ services:
     - '5432'
   app:
     build: .
-    environment:
-      POSTGRES_URL: 'postgres:5432'
+    #environment:
+    #  POSTGRES_URL: 'postgres:5432'
     #network_mode: host
     volumes:
     - './log:/mtsar/log'
@@ -30,6 +30,4 @@ services:
     - '8080:8080'
     - '8081:8081'
     links:
-    - postgres
-    depends_on:
     - postgres
