@@ -12,7 +12,6 @@ services:
       POSTGRES_USER: mtsar
       POSTGRES_PASSWORD: mtsar
       POSTGRES_DATABASE: mtsar
-      PGDATA:
 
     # куда сохраняем результаты
     volumes:
