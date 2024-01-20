@@ -5,7 +5,7 @@ services:
   postgres:
 
     # берётся она из докерхаба, готовенькая
-    image: 'postgres'
+    image: 'postgres:12'
 
     # в лоб задаём юзера и пароль
     environment:
